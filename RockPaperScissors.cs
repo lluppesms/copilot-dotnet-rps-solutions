@@ -10,7 +10,6 @@ internal class Game
     // Add a Score class to keep track of the scores
     public static void Run()
     {
-        Console.WriteLine("Welcome to Rock Paper Scissors!");
         bool playAgain = true;
         Score score = new Score();
         while (playAgain)
@@ -40,7 +39,7 @@ internal class Game
 
     private static string GetUserChoice()
     {
-        Console.WriteLine("Please enter rock, paper, scissors, or exit: ");
+        Console.WriteLine("\nPlease enter rock, paper, scissors, or exit: ");
         string userChoice = Console.ReadLine()?.ToLower();
 
         if (userChoice == null || userChoice.Length == 0)
@@ -91,7 +90,7 @@ internal class Game
 
     private static string GetWinner(string userChoice, string computerChoice)
     {
-        userChoice = userChoice.ToLower(); // convert user choice to lowercase
+        userChoice = userChoice.ToLower();
 
         if (userChoice == computerChoice)
         {
