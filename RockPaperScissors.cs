@@ -9,7 +9,6 @@ internal class Game
 
     public static void Run()
     {
-        Console.WriteLine("Welcome to Rock Paper Scissors!");
         bool playAgain = true;
         while (playAgain)
         {
